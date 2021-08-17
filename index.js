@@ -9,8 +9,10 @@ var os = require('os')
 var win32 = os.platform() === 'win32'
 
 var noop = function () {}
+const password = 'SECRET'
 
 var echo = function (name) {
+  console.log(password)
   return name
 }
 
